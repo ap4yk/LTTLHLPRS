@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--//Contains information about the website. CSS files Javascript files are loaded here ---->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Little Helpers</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+
+
+  </head>
+  <body>
+<!-----------------------Body contains website visual presentation------------------------------->
+<section class="sub-header">
+      <nav>
+        <!--Logo-->
+        <a href="Index.html"><img src="Images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+
+      </nav>
+      <h1>
+        Susisiekite su mumis
+      </h1>
+</section>
+<!-----------------------------------Contacts------------------------------------------------>
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.1754463366165!2d25.28601991557494!3d54.68894018099983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd941a3d231d5f%3A0x5d13372a2dcf4eb5!2sKaraliaus%20Mind
+  augo%20tiltas%2C%20Vilnius%2C%20Vilniaus%20m.%20sav.!5e0!3m2!1sen!2slt!4v1671714916971!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa fa-facebook-square"></i>
+        <span>
+          <h5>XYZ Adresas</h5>
+          <P>Salis ir Miestas</P>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>+370 000 0000</h5>
+          <P>Pirmadienis penktadienis: 9h-17h<br>Savaitgalis: 9h-15h</P>
+    </div>
+  </div>
+</section>
+<!---------------------------------Media----------------------------------------------------->
+<section class="media">
+  <h2>Media</h2>
+  <p>Lorem ipsum dolor sit amet</p>
+  <div class="icons">
+    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+  </div>
+</section>
+
+
+<!--------------Javascript for Toggle Menu (phone Users)------------------------------------->
+<script>
+  
+var navLinks = document.getElementById("navLinks");
+function showmenu(){
+    navLinks.style.right = "0";
+}
+function hidemenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>   
